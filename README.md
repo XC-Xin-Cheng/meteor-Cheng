@@ -1,6 +1,4 @@
-# Meteor-ChengXC
-
-A [Meteor Client](https://github.com/MeteorDevelopment/meteor-client) addon, ported and extended from [meteor-rejects](https://github.com/MeteorDevelopment/meteor-rejects) / [meteor-cheng](https://github.com/cheng7/meteor-cheng) for **Minecraft 26.1 / Fabric**.
+# Meteor-Cheng
 
 - Loader: Fabric `0.19.5`
 - Minecraft: `26.1` (this branch)
@@ -103,7 +101,3 @@ GPL-3.0 requires distributing the complete corresponding source with binaries. T
 <https://github.com/XC-XinCheng/meteor-chengXC>
 
 The released jar also bundles `LICENSE` and `THIRD-PARTY-NOTICES.md` under `META-INF/`.
-
----
-
-Original mod: https://github.com/cheng7/meteor-cheng
