@@ -101,7 +101,3 @@ GPL-3.0 requires distributing the complete corresponding source with binaries. T
 <https://github.com/XC-XinCheng/meteor-chengXC>
 
 The released jar also bundles `LICENSE` and `THIRD-PARTY-NOTICES.md` under `META-INF/`.
-
----
-
-Original mod: https://github.com/cheng7/meteor-cheng
