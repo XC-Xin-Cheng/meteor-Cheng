@@ -1,0 +1,48 @@
+/*
+ * 本文件属于 meteor-cheng 项目：https://github.com/cheng7/meteor-cheng
+ * meteor-cheng 是 meteor-cheng 在 Minecraft 26.1 / Fabric 上的移植版本。
+ *
+ * Copyright (C) 2024-2026 XC_XinCheng
+ *
+ * SPDX-License-Identifier: GPL-3.0-only
+ *
+ * 本程序是自由软件：你可以依据 GNU 通用公共许可证（GNU GPL）第 3 版的条款
+ * 重新发布和/或修改它。
+ *
+ * 本程序基于“有用”的期望分发，但不提供任何担保，甚至不提供适销性或特定
+ * 用途适用性的默示担保。详见 GNU 通用公共许可证。
+ *
+ * 你应当已随本程序收到一份 GNU 通用公共许可证副本；如果没有，请见
+ * <https://www.gnu.org/licenses/>。
+ */
+package com.cheng.addon.ok;
+
+import com.cheng.addon.ChengApp;
+import meteordevelopment.meteorclient.addons.GithubRepo;
+import meteordevelopment.meteorclient.addons.MeteorAddon;
+import meteordevelopment.meteorclient.systems.hud.HudGroup;
+
+public class ChengAddon extends MeteorAddon {
+    public static final HudGroup HUD_GROUP = new HudGroup("Cheng");
+
+    @Override
+    public void onInitialize() {
+
+        ChengApp.init();
+    }
+
+    @Override
+    public void onRegisterCategories() {
+        ChengApp.onRegisterCategories();
+    }
+
+    @Override
+    public String getPackage() {
+        return "com.cheng.addon";
+    }
+
+    @Override
+    public GithubRepo getRepo() {
+        return new GithubRepo("XC-Xin-Cheng", "meteor-chengXC");
+    }
+}
