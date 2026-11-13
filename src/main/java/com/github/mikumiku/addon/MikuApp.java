@@ -107,7 +107,6 @@ public class MikuApp {
         add(modules, SeedMine.class);
         add(modules, OnekeyFireWork.class);
         add(modules, StructureFinder.class);
-        add(modules, EnchantedAppleFinder.class);
         add(modules, ElytraFinder.class);
         add(modules, ShulkerBoxItemFetcher.class);
         add(modules, VillagerRoller.class);
