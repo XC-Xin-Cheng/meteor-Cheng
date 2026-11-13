@@ -582,13 +582,10 @@ public class GhostMine extends BaseModule {
      * 范围检查：超出距离时清除目标
      */
     public void rangeCheck() {
-        // 优化：阈值比较改用平方距离（distanceTo > r 等价于 squaredDistanceTo > r*r）。
-        int rangeV = range.get().intValue();
-        double rangeSq = (double) rangeV * rangeV;
-        if (firstBlockDate != null && PlayerUtils.squaredDistanceTo(firstBlockDate.pos) > rangeSq) {
+        if (firstBlockDate != null && PlayerUtils.distanceTo(firstBlockDate.pos) > range.get().intValue()) {
             firstBlockDate = null;
         }
-        if (secondBlockDate != null && PlayerUtils.squaredDistanceTo(secondBlockDate.pos) > rangeSq) {
+        if (secondBlockDate != null && PlayerUtils.distanceTo(secondBlockDate.pos) > range.get().intValue()) {
             secondBlockDate = null;
         }
         if (rebreakBlockDate != null && PlayerUtils.distanceTo(rebreakBlockDate.pos) > range.get().intValue()) {

@@ -370,16 +370,14 @@ public class AutoDigFeet extends BaseModule {
 
     private Player getClosestEnemy(double range) {
         Player closest = null;
-        // 优化：最近者选择改为平方距离（min 与 sqrt 的单调性一致，选出的玩家相同；range 作为
-        // 种子换成其平方，语义不变）。
-        double minDistSq = range * range;
+        double minDist = range;
 
         for (Player player : mc.level.players()) {
             if (player == mc.player || player.isDeadOrDying() || player.getHealth() <= 0) continue;
 
-            double distSq = mc.player.distanceToSqr(player);
-            if (distSq < minDistSq) {
-                minDistSq = distSq;
+            double dist = mc.player.distanceTo(player);
+            if (dist < minDist) {
+                minDist = dist;
                 closest = player;
             }
         }
@@ -389,11 +387,10 @@ public class AutoDigFeet extends BaseModule {
 
     private List<Player> getEnemies(double range) {
         List<Player> enemies = new ArrayList<>();
-        double rangeSq = range * range;
 
         for (Player player : mc.level.players()) {
             if (player == mc.player || player.isDeadOrDying() || player.getHealth() <= 0) continue;
-            if (mc.player.distanceToSqr(player) <= rangeSq) {
+            if (mc.player.distanceTo(player) <= range) {
                 enemies.add(player);
             }
         }

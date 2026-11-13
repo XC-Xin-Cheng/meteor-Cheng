@@ -87,9 +87,7 @@ public class BlockPosListSetting extends Setting<List<BlockPos>> {
     protected List<BlockPos> load(CompoundTag tag) {
         get().clear();
 
-        // 26.1：getList 返回 Optional，键缺失/类型不符时 .get() 会抛 NoSuchElementException，
-        // 改用 getListOrEmpty 兜底（语义与 1.21.10 一致）。
-        ListTag valueTag = tag.getListOrEmpty("value");
+        ListTag valueTag = tag.getList("value").get();
         for (Tag element : valueTag) {
             int[] coords = ((IntArrayTag) element).getAsIntArray();
             if (coords.length == 3) {

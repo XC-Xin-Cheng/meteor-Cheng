@@ -1,9 +1,3 @@
-buildscript {
-    repositories {
-        maven { url = uri('libs/m2repo') }
-    }
-}
-
 plugins {
     id 'net.fabricmc.fabric-loom' version "${loom_version}"
 }

@@ -263,10 +263,9 @@ public class HoleSnap extends BaseModule {
             updateTargetPos();
 
             Vec3 playerPos = Via.getEntityPos(mc.player);
-            // 优化：阈值比较改用平方距离（distanceTo < 0.25 等价于 distanceToSqr < 0.0625），省掉每 tick 一次 sqrt。
-            double distSq = playerPos.distanceToSqr(targetPos);
+            double dist = playerPos.distanceTo(targetPos);
 
-            if (distSq < 0.0625 && playerPos.y <= holePos.getY() + 0.8) {
+            if (dist < 0.25 && playerPos.y <= holePos.getY() + 0.8) {
                 toggle();
             }
 
