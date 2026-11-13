@@ -1,4 +1,4 @@
-# Meteor-ChengXC
+# Meteor-Cheng
 
 - Loader: Fabric `0.19.5`
 - Minecraft: `26.1` (this branch)
