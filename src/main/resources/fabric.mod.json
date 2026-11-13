@@ -1,32 +1,32 @@
 {
   "schemaVersion": 1,
-  "id": "meteor_miku_xc",
+  "id": "cheng",
   "version": "${version}",
   "name": "Cheng",
-  "description": "Meteor Client addon miku.",
+  "description": "Meteor Client addon cheng.",
   "authors": [
-    "§cMiku",
+    "§cCheng",
     "§7§oXC_Xin_Cheng"
   ],
   "license": "GPL-3.0-only",
   "contact": {
-    "repo": "https://github.com/XC-Xin-Cheng/meteor-mikuXC",
-    "homepage": "https://github.com/XC-Xin-Cheng/meteor-mikuXC",
-    "sources": "https://github.com/XC-Xin-Cheng/meteor-mikuXC",
-    "issues": "https://github.com/XC-Xin-Cheng/meteor-mikuXC/issues"
+    "repo": "https://github.com/XC-Xin-Cheng/meteor-chengXC",
+    "homepage": "https://github.com/XC-Xin-Cheng/meteor-chengXC",
+    "sources": "https://github.com/XC-Xin-Cheng/meteor-chengXC",
+    "issues": "https://github.com/XC-Xin-Cheng/meteor-chengXC/issues"
   },
-  "icon": "assets/meteor_miku_xc/icon.png",
+  "icon": "assets/cheng/icon.png",
   "environment": "client",
   "entrypoints": {
     "preLaunch": [
-      "com.github.mikumiku.addon.ok.PreLaunchInitializer"
+      "com.cheng.addon.ok.PreLaunchInitializer"
     ],
     "meteor": [
-      "com.github.mikumiku.addon.ok.MikuMikuAddon"
+      "com.cheng.addon.ok.ChengAddon"
     ]
   },
   "mixins": [
-    "miku.mixins.json"
+    "cheng.mixins.json"
   ],
   "custom": {
     "meteor-client:color": "225,25,25"
