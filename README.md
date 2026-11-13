@@ -1,6 +1,6 @@
-# Meteor-MikuXC
+# Cheng
 
-A [Meteor Client](https://github.com/MeteorDevelopment/meteor-client) addon, ported and extended from [meteor-rejects](https://github.com/MeteorDevelopment/meteor-rejects) / [meteor-miku](https://github.com/mikumiku7/meteor-miku) for **Minecraft 26.1 / Fabric**.
+A [Meteor Client](https://github.com/MeteorDevelopment/meteor-client) addon, ported and extended from [meteor-rejects](https://github.com/MeteorDevelopment/meteor-rejects) / [meteor-cheng](https://github.com/cheng7/meteor-cheng) for **Minecraft 26.1 / Fabric**.
 
 - Loader: Fabric `0.19.5`
 - Minecraft: `26.1` (this branch)
@@ -100,10 +100,10 @@ As a derivative work, this mod is therefore released under GPL-3.0 with upstream
 
 GPL-3.0 requires distributing the complete corresponding source with binaries. The full source of this mod is published at:
 
-<https://github.com/XC-XinCheng/meteor-mikuXC>
+<https://github.com/XC-XinCheng/meteor-chengXC>
 
 The released jar also bundles `LICENSE` and `THIRD-PARTY-NOTICES.md` under `META-INF/`.
 
 ---
 
-Original mod: https://github.com/mikumiku7/meteor-miku
+Original mod: https://github.com/cheng7/meteor-cheng

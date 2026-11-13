@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "id": "cheng",
+  "id": "meteor_cheng",
   "version": "${version}",
-  "name": "Cheng",
+  "name": "Meteor-Cheng",
   "description": "Meteor Client addon cheng.",
   "authors": [
     "§cCheng",
@@ -15,7 +15,7 @@
     "sources": "https://github.com/XC-Xin-Cheng/Meteor-Cheng",
     "issues": "https://github.com/XC-Xin-Cheng/Meteor-Cheng/issues"
   },
-  "icon": "assets/cheng/icon.png",
+  "icon": "assets/meteor_cheng/icon.png",
   "environment": "client",
   "entrypoints": {
     "preLaunch": [
